@@ -1,0 +1,13 @@
+{
+  "name": "medai",
+  "version": "1.0.0",
+  "description": "Medical prescription price estimator",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "cd frontend && npm run dev",
+    "install-deps": "cd frontend && npm install"
+  },
+  "workspaces": [
+    "frontend"
+  ]
+} 
