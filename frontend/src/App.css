@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #f4f8fb;
+}
+
+.app-bg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #ffff00 0%, #f4f8fb 100%);
+}
+
+.app-header {
+  background: #fff;
+  border-bottom: 3px solid #e53935;
+  padding: 2rem 1rem 1rem 1rem;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.clinic-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: #e3f0ff;
+  border: 2px solid #e53935;
+  padding: 6px;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #222f3e;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0;
+  color: #1976d2;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.clinic-info {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.main-card {
+  max-width: 600px;
+  margin: 2rem auto 1rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  padding: 2rem 2rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
+  margin: 2rem 0 1rem 0;
+  letter-spacing: 0.5px;
+}
+
+/* Upload Component Styles */
+.upload-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(44, 62, 80, 0.06);
+}
+
+.file-input-wrapper {
+  margin-bottom: 1rem;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-input-label {
+  display: block;
+  padding: 12px 20px;
+  background: #ffffff;
+  border: 2px dashed #1976d2;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.file-input-label:hover {
+  background: #e3f0ff;
+  border-color: #1565c0;
+}
+
+.upload-button {
+  width: 100%;
+  padding: 12px 20px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.upload-button:hover:not(:disabled) {
+  background: #1565c0;
+}
+
+.upload-button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc3545;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.file-info {
+  background: #e9ecef;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 1rem;
+}
+
+.file-info p {
+  margin: 5px 0;
+  color: #495057;
+  font-size: 14px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(44, 62, 80, 0.08);
+}
+
+th, td {
+  padding: 14px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+th {
+  background: #1976d2;
+  color: white;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+tr:hover {
+  background: #f4f8fb;
+}
+
+@media (max-width: 700px) {
+  .main-card {
+    max-width: 98vw;
+    padding: 1rem 0.5rem;
+  }
+  .app-header {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+  .logo-title {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+} 
